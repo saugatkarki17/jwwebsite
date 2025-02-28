@@ -35,10 +35,10 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Main navigation */}
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 ">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left side - Phone number and location */}
-          <div className="flex items-center space-x-8 mb-4 md:mb-0">
+          <div className="flex items-center space-x-30 md:space-x-8 mb-6 md:mb-0">
             <span className="text-sm text-gray-600">111.222.3333</span>
             <span className="text-sm text-gray-600 flex items-center gap-1">
             <svg
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Right side - Search, Account, Cart, Currency, Hamburger */}
-          <div className="flex items-center space-x-9">
+          <div className="flex items-center space-x-14 md:space-x-9">
             {/* <input
               type="text"
               placeholder="Search"
@@ -159,9 +159,9 @@ const Navbar: React.FC = () => {
               isMenuOpen ? 'max-h-screen' : 'max-h-0'
             } overflow-hidden transition-max-height duration-300 ease-in-out`}
           >
-            <ul className="py-4">
+            <ul className="py-0 ">
               {navItems.map((item) => (
-                <li key={item.path} className="py-2">
+                <li key={item.path} className="py-3.5 border-b-1 border-gray-200 w-100 ">
                   <Link
                     href={item.path}
                     className={`block px-4 text-gray-700 hover:text-gray-900 ${
