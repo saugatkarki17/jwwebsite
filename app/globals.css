@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* styles/globals.css or a separate CSS module */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
